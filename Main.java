@@ -33,7 +33,9 @@ public class Main {
         if ((one > 10) || (two > 10)) {
             throw new Exception("Калькулятор принимает числа от 1 до 10 включительно, не более");
         }
-
+        if ((one < 1) || (two < 1)) {
+            throw new Exception("Калькулятор принимает числа от не менее 1 до не более 10 включительно");
+        }
         int result;
         switch (exampleArray[1]) {
             case "+" -> {
